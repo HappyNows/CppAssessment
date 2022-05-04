@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "91cdda9d-24d2-448f-bc8a-772e797dcc50": {
+      "ProjectGuid": "91cdda9d-24d2-448f-bc8a-772e797dcc50",
+      "DisplayName": "CppAssessment",
+      "ColorIndex": 0
+    },
+    "243f6f38-2b90-4acd-9cc1-8a821bc949de": {
+      "ProjectGuid": "243f6f38-2b90-4acd-9cc1-8a821bc949de",
+      "DisplayName": "AIE_01",
+      "ColorIndex": 1
+    },
+    "041d6eca-37ae-4760-8795-d99143ca4f23": {
+      "ProjectGuid": "041d6eca-37ae-4760-8795-d99143ca4f23",
+      "DisplayName": "AIE_02",
+      "ColorIndex": 2
+    },
+    "b68a2af3-01f0-4ec8-b9f4-d7ecf9ee53c0": {
+      "ProjectGuid": "b68a2af3-01f0-4ec8-b9f4-d7ecf9ee53c0",
+      "DisplayName": "AIE_03",
+      "ColorIndex": 3
+    },
+    "79fecc4c-cee7-422c-8530-c4e1a8addbff": {
+      "ProjectGuid": "79fecc4c-cee7-422c-8530-c4e1a8addbff",
+      "DisplayName": "AIE_04",
+      "ColorIndex": 4
+    },
+    "f2e1a1bd-1fb0-4c9e-a5ec-9a50611539ca": {
+      "ProjectGuid": "f2e1a1bd-1fb0-4c9e-a5ec-9a50611539ca",
+      "DisplayName": "ClassicGame",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}
