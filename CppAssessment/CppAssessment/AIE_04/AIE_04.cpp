@@ -1,20 +1,40 @@
-// AIE_04.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+
 
 #include <iostream>
 
-int main()
+
+void SortArray(int* arr, int count);
+bool IsArraySorted(const int* arr, int count);
+
+int main(int argc, char** argv)
 {
-    std::cout << "Hello World!\n";
+	const int NUM_ITEMS = 8;
+	int numbers[NUM_ITEMS] = { 13, 1, 7, 5, 11, 9, 15, 3 };
+
+	SortArray(numbers, NUM_ITEMS);
+
+	// Test: all values should be sorted in ascending order
+	if (IsArraySorted(numbers, NUM_ITEMS)) std::cout << "Pass: the array is sorted" << std::endl;
+	else std::cout << "Fail: the array is not sorted" << std::endl;
+
+	return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+bool IsArraySorted(const int* arr, int count)
+{	
+	for (int i = 0; i < count - 1; i++)
+	{
+		if (arr[i] > arr[i + 1])
+			return false;
+	}
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+	return true;
+}
+
+
+void SortArray(int* arr, int count)
+{
+	// TODO: 
+	// modify the values in the array so that when this method returns
+	// all values are sorted in ascending order
+}

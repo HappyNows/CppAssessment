@@ -1,20 +1,47 @@
-// AIE_02.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
 
-int main()
+int MinValue(const int* arr, int count);
+int MaxValue(const int* arr, int count);
+int CountOccurencesOfValue(const int* arr, int count, int search);
+
+
+int main(int argc, char** argv)
 {
-    std::cout << "Hello World!\n";
+	const int NUM_NUMBERS = 10;
+	int numbers[NUM_NUMBERS] = { 10, 20, 30, 40, 50, 10, 20, 30, 40, 50 };
+
+	// In C++, an array is simply a pointer to the first value
+	// when passing an array through a function parameter, we loose the length information
+	// therefore we need to pass the array size in as well
+
+	// implement the above methods
+	// so that the expected output is printed to the console
+
+	std::cout << "Expected: 10 - Got: " << MinValue(numbers, NUM_NUMBERS) << std::endl;
+	std::cout << "Expected: 50 - Got: " << MaxValue(numbers, NUM_NUMBERS) << std::endl;
+	std::cout << "Expected: 2 - Got: " << CountOccurencesOfValue(numbers, NUM_NUMBERS, 10) << std::endl;
+	std::cout << "Expected: 0 - Got: " << CountOccurencesOfValue(numbers, NUM_NUMBERS, 8) << std::endl;
+
+	return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+int MinValue(const int* arr, int count)
+{
+	// TODO: loop through the array, return the smallest value
+	return 0;
+}
+
+int MaxValue(const int* arr, int count)
+{
+	// TODO: loop through the array, return the largest value
+	return 0;
+}
+
+int CountOccurencesOfValue(const int* arr, int count, int search)
+{
+	// TODO: loop through the array, return the largest value
+	return 0;
+}
+

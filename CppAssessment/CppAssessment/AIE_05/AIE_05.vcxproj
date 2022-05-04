@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{de5d0f0f-d44c-46e4-bce9-f82d8b538b84}</ProjectGuid>
-    <RootNamespace>AIE01</RootNamespace>
+    <ProjectGuid>{b5c48e9c-3067-4cce-8e18-7c390017fcc5}</ProjectGuid>
+    <RootNamespace>AIE05</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AIE_01.cpp" />
+    <ClCompile Include="AIE_05.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

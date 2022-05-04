@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{de5d0f0f-d44c-46e4-bce9-f82d8b538b84}</ProjectGuid>
-    <RootNamespace>AIE01</RootNamespace>
+    <ProjectGuid>{db030211-fcab-4ae8-b09c-bfd92a067d70}</ProjectGuid>
+    <RootNamespace>AIE06OthelloConsole</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AIE_01.cpp" />
+    <ClCompile Include="OthelloConsole.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

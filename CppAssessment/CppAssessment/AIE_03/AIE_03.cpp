@@ -1,20 +1,52 @@
-// AIE_03.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+
 
 #include <iostream>
+#include <string>
 
-int main()
+const int* BinarySearch(const int* arr, int count, int searchVal);
+void TestResult(const int* result, int* const expected);
+
+
+int main(int argc, char** argv)
 {
-    std::cout << "Hello World!\n";
+	const int NUM_ITEMS = 8;
+	int arr1[NUM_ITEMS] = { 1, 3, 5, 7, 9, 11, 13, 15 };
+
+	// The numbers in the array are assumed to be sorted
+	// search for the values 9, 1, 15, 0
+
+	TestResult( BinarySearch(arr1, NUM_ITEMS, 9),  &arr1[4]   );
+	TestResult( BinarySearch(arr1, NUM_ITEMS, 1),  &arr1[0]   );
+	TestResult( BinarySearch(arr1, NUM_ITEMS, 15), &arr1[7]   );
+	TestResult( BinarySearch(arr1, NUM_ITEMS, 0),  nullptr    );
+	TestResult( BinarySearch(arr1, NUM_ITEMS, 16), nullptr    );
+
+
+	return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+void TestResult(const int* result, int* const expected)
+{
+	if (result == expected)
+	{
+		std::cout << "PASS: result(" <<
+			(result == nullptr ? "nullptr" : std::to_string(*result).c_str()) << ")" << std::endl;
+		return;
+	}
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+	std::cout << "FAIL: received(" <<
+		(result == nullptr ? "nullptr" : std::to_string(*result).c_str()) << ") expected(" <<
+		(expected == nullptr ? "nullptr" : std::to_string(*expected).c_str()) << ")" << std::endl;
+}
+
+const int* BinarySearch(const int* arr, int count, int searchVal)
+{
+	// TODO: Implement a binary search
+	// the array is assumed to be sorted
+
+	// This method should:
+	//	- Return: nullptr if the value is not found
+	//  - Return: pointer to the found value in the array
+	
+	return nullptr;
+}
