@@ -1,7 +1,10 @@
 
 
 #include <iostream>
+#include <algorithm>
+#include <array>
 
+using namespace std;
 
 void SortArray(int* arr, int count);
 bool IsArraySorted(const int* arr, int count);
@@ -37,4 +40,14 @@ void SortArray(int* arr, int count)
 	// TODO: 
 	// modify the values in the array so that when this method returns
 	// all values are sorted in ascending order
+	int n = sizeof(arr) / sizeof(arr[0]);
+	int* temp;
+
+	for (int i = 0; i < 5; ++i)
+	{
+		arr[i];
+	}
+
+	sort(arr, arr + n, greater<int>());
+
 }

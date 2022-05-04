@@ -1,6 +1,7 @@
 
 #include <iostream>
 
+
 int main(int argc, char** argv)
 {
 	const int NUM_NUMBERS = 5;
@@ -13,6 +14,13 @@ int main(int argc, char** argv)
 	*/
 	// Task1: Write your Code here
 	// ------------------------------------------------------------------------
+	
+	for (int i = 0; i < 5; i++)
+	{
+		std::cout << numbers[i] << std::endl;
+	}
+		
+	std::cout << std::endl;
 
 
 	// ------------------------------------------------------------------------
@@ -26,7 +34,11 @@ int main(int argc, char** argv)
 
 	// Task 2: Write your Code here
 	// ------------------------------------------------------------------------
-
+		
+	for (int i = 4; i >= 0; i--)
+	{
+		std::cout << numbers[i] << std::endl;
+	}
 
 	// ------------------------------------------------------------------------
 
