@@ -40,14 +40,14 @@ void SortArray(int* arr, int count)
 	// TODO: 
 	// modify the values in the array so that when this method returns
 	// all values are sorted in ascending order
-	int n = sizeof(arr) / sizeof(arr[0]);
-	int* temp;
+	int temp = 0;
 
-	for (int i = 0; i < 5; ++i)
+	for (int i = 0; i < 4; ++i)
 	{
-		arr[i];
+		if (arr[i] < arr[i + 1])
+		{
+			swap(arr[i], arr[i + 1]);
+			return;
+		}
 	}
-
-	sort(arr, arr + n, greater<int>());
-
 }

@@ -1,6 +1,8 @@
 #include "Application.h"
 #include "raylib.h"
 #include <stdlib.h>
+#include <cmath>
+#include <iostream>
 
 
 Application::Application()
@@ -38,6 +40,12 @@ void Application::Load()
 	
 	// write your code here
 
+	for (int i = 0; i < ROWS * COLS; i++)
+	{
+		int ranNum = rand() % 6;
+		ranNum = m_tiles[i];
+	}
+
 	// -----------------------------------------------------
 }
 
@@ -52,13 +60,17 @@ void Application::Update(float deltaTime)
 	{
 		Vector2 mousePos = GetMousePosition();
 
+		int x = round(mousePos.x);
+		int y = round(mousePos.y);
+
 		// Task 3:
 		// TODO: Calculate row and col index based on the mouse positon
-		int rowIndex = 0; 
-		int colIndex = 0;
+		int rowIndex = round(mousePos.x / m_tileWidth);
+		int colIndex = round(mousePos.y / m_tileHeight);
+		
 
 		// TODO: calculate the index of the tile clicked on based on the row/col index
-		int tileIndex = 0;
+		int tileIndex = rowIndex + colIndex;
 
 		m_tiles[tileIndex] += 1;
 		if (m_tiles[tileIndex] >= 5)
@@ -83,9 +95,23 @@ void Application::Draw()
 	// write your code here
 	float xPos = 0;
 	float yPos = 0;
-	Color color = GetTileColor(1); // pass in the tilevalue
 
-	DrawRectangle(xPos, yPos, m_tileWidth, m_tileHeight, color);
+	for (int row = 0; row < ROWS; ++row)
+	{
+		for (int col = 0; col < COLS; ++col)
+		{
+			int index = (row * COLS) + col;
+			xPos = m_tileWidth * col;
+
+			Color color = GetTileColor(1); // pass in the tilevalue
+
+			DrawRectangle(xPos, yPos, m_tileWidth, m_tileHeight, color);
+		}
+		yPos = m_tileWidth * row;
+	}
+
+
+
 
 	// --------------------------------------------------------------------
 

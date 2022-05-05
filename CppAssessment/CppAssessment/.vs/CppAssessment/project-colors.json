@@ -55,7 +55,17 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "ea0df64e-9d87-45bf-a840-355c397290bf": {
+      "ProjectGuid": "ea0df64e-9d87-45bf-a840-355c397290bf",
+      "DisplayName": "AIE_06",
+      "ColorIndex": 10
+    },
+    "b5c48e9c-3067-4cce-8e18-7c390017fcc5": {
+      "ProjectGuid": "b5c48e9c-3067-4cce-8e18-7c390017fcc5",
+      "DisplayName": "AIE_05",
+      "ColorIndex": 11
     }
   },
-  "NextColorIndex": 10
+  "NextColorIndex": 12
 }
